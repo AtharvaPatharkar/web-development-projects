@@ -1,0 +1,134 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle, #ff5f6d, #ffc371);
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Header */
+.main-header {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.main-header h1 {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-header p {
+  font-size: 1.2em;
+  color: #ffebc6;
+}
+
+/* Center Div - Rainbow Effect */
+.center {
+  position: relative;
+  width: 80%;
+  height: 400px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 25px;
+  animation: rainbowMove 5s infinite ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+}
+
+.one { background: linear-gradient(90deg, #ff4b2b, #ff416c); }
+.two { background: linear-gradient(90deg, #ff9900, #ffcc00); }
+.three { background: linear-gradient(90deg, #faff00, #ccff00); }
+.four { background: linear-gradient(90deg, #28a745, #28d745); }
+.five { background: linear-gradient(90deg, #007bff, #0056d2); }
+.six { background: linear-gradient(90deg, #6f42c1, #563d7c); }
+.seven { background: linear-gradient(90deg, #e83e8c, #d63384); }
+
+/* Keyframe Animations */
+@keyframes rainbowMove {
+  0% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(-10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Footer Styles */
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+}
+
+footer .copyright {
+  font-size: 0.9em;
+  color: #ffebc6;
+}
+
+footer .github-link {
+  font-size: 1em;
+  color: #007bff;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+footer .github-link:hover {
+  text-decoration: underline;
+  color: #0056d2;
+}
+
+/* Extra Hover Effects */
+ul li:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .center {
+    width: 90%;
+    height: auto;
+  }
+  
+  ul li {
+    height: 40px;
+    margin: 8px 0;
+  }
+  
+  footer .github-link {
+    font-size: 0.8em;
+  }
+}
