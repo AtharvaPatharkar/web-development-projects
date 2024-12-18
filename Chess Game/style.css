@@ -1,0 +1,134 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Changed font for better readability */
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+div * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#turn {
+    max-width: 451px;
+    max-height: 30px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: right;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-style: inset;
+    text-align: center;
+    padding: 10px;
+    background: #fff; /* White background for the turn indicator */
+    color: #2c3e50; /* Dark blue text color */
+    font-weight: bold; /* Bold text for better visibility */
+    transition: .85s linear;
+}
+
+.turnhighlight {
+    background: #4CAF50 !important; /* Bright green highlight */
+    color: #fff;
+}
+
+#game {
+    max-width: 504px;
+    max-height: 504px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 20px auto;
+}
+
+.cellprefix {
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    float: left;
+    margin: 3px;
+    padding: 15px 0 0 20px;
+    color: #3498db; /* Sky blue for cell numbers */
+    font-weight: bold; /* Bold text for cell numbers */
+}
+
+.gamecell {
+    border: 1px solid #3498db; /* Sky blue border */
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    float: left;
+    margin: 3px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 30pt;
+    padding: 0 0 0 6px;
+    cursor: pointer;
+    z-index: 1;
+    background: #ffffff; /* White background for the cells */
+}
+
+.grey {
+    background: #e0e0e0; /* Light grey for alternating cells */
+}
+
+.green {
+    background: #76c7c0 !important; /* Light teal for active cells */
+}
+
+.neonblue_txt {
+    animation: neonBlueText 1.5s ease-in-out infinite alternate;
+}
+
+.neonorange_txt {
+    animation: neonOrangeText 1.5s ease-in-out infinite alternate;
+}
+
+.neongreen_txt {
+    animation: neonGreenText 1.5s ease-in-out infinite alternate;
+}
+
+/* --- N E O N    T E X T --- */
+@keyframes neonBlueText {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #3498db,
+            0 0 70px #3498db, 0 0 80px #3498db, 0 0 100px #3498db, 0 0 150px #3498db;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #3498db,
+            0 0 35px #3498db, 0 0 40px #3498db, 0 0 50px #3498db, 0 0 75px #3498db;
+    }
+}
+
+@keyframes neonOrangeText {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
+            0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
+            0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+    }
+}
+
+@keyframes neonGreenText {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
+            0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
+            0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+    }
+}
+
