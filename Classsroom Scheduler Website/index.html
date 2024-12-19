@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Classroom Scheduler</title>
+</head>
+
+<body>
+    <div id="datetime" class="datetime"></div> <!-- Added Date and Time Display -->
+    
+    <nav class="navbar">
+        <div class="left">
+            <div id="logo"><h1>Classroom Scheduler</h1></div>
+            <div>
+                <ul>
+                    <li><a href="#">View your batches</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="searchBox">
+            <input type="search" name="searchBar" placeholder="Search" id="searchTxt" />
+            <button class="btn">Search Batch Name</button>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <h1 class="heading">Schedule Your Batch</h1>
+        <label for="title" class="addingNote">Add Batch name</label>
+        <br />
+        <input type="text" id="title" placeholder="Enter batch Name" />
+        <br />
+        <label for="time" class="addingNote">Add Batch Time</label>
+        <input type="time" id="time" placeholder="Enter batch timing" />
+        <br />        
+        <label for="note-text" class="addingNote">Add a Teacher</label>
+        <br />
+        <input type="text" id="note-text" placeholder="Enter teacher's name" />
+        <br />
+        <button class="note-btn">Schedule Batch</button>
+
+        <hr class="margin-top hr" />
+        <h1 class="class">Your Classes</h1>
+
+        <hr class="hr"/>
+        <div class="showNotes" id="notes"></div>
+    </div>
+
+    <footer>
+        <p>© 2024 CodeWithAP. All rights reserved.</p>
+        <a href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
