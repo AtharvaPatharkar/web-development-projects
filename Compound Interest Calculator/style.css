@@ -1,0 +1,136 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: url('bg.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+}
+
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Container */
+.container {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.calculator .form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #aaaaaa;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #555555;
+    background-color: #444;
+    color: white;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #43a047;
+}
+
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    border: 1px solid #4caf50;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #f8f9fa; /* Light gray background */
+    border: 3px solid #371919;   /* Light gray border */
+    padding: 10px;            /* Space inside the footer */
+    text-align: center;       /* Center the text */
+    margin-top: 20px;         /* Space above the footer */
+    font-family: Arial, sans-serif; /* Font for better readability */
+    color: #333;              /* Text color */
+}
+
+footer a {
+    color: #007bff;           /* Link color */
+    text-decoration: none;    /* Remove underline from link */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
