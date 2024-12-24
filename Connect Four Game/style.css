@@ -1,0 +1,129 @@
+/* General body styling with background */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Game container */
+.container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border: 3px solid #444444;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header styling */
+.container h1,
+.container h2,
+.container h3 {
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Player names display */
+.player-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.player-info span {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid #666666;
+  border-radius: 10px;
+  background-color: #292929;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4), inset 0px -2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Timer styling */
+.timer {
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #666666;
+  border-radius: 10px;
+  background-color: #292929;
+  display: inline-block;
+}
+
+/* Board styling */
+.board {
+  border-spacing: 10px;
+  margin: 20px auto;
+  border: 5px solid #444444;
+  border-radius: 10px;
+  background-color: #2e2e2e;
+  padding: 10px;
+}
+
+/* Buttons on the board */
+.board button {
+  background-color: #e0e0e0;
+  border: 2px solid #444444;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6), inset 0px -2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.board button:hover {
+  background-color: #b3b3ff;
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Player chip colors */
+.board button.player1 {
+  background-color: red;
+  box-shadow: 0px 4px 6px rgba(255, 0, 0, 0.6), inset 0px -2px 2px rgba(139, 0, 0, 0.4);
+}
+
+.board button.player2 {
+  background-color: yellow;
+  box-shadow: 0px 4px 6px rgba(255, 255, 0, 0.6), inset 0px -2px 2px rgba(255, 223, 0, 0.4);
+}
+
+/* Restart button styling */
+.restart-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.restart-btn:hover {
+  background-color: #218838;
+  transform: translateY(-3px);
+}
+
+/* Footer styling */
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
