@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Profile Finder</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="search-container">
+      <input type="text" id="input" placeholder="Enter GitHub Username" />
+      <div id="search" onclick="getUser()">Search User</div>
+    </div>
+
+    <div class="profile-card" id="profile-card">
+      <div class="main-info">
+        <img src="github-logo.png" alt="avatar" id="prof-img" />
+        <span class="name" id="name"></span>
+        <a href="" id="username"></a>
+      </div>
+      <div class="bio" id="bio-container">
+        <p id="bio"></p>
+        <p><span id="repo"></span> Repositories</p>
+      </div>
+      <div class="follow">
+        <div class="followers">
+          <span class="no" id="followers"></span> Followers
+        </div>
+        <div class="following">
+          <span class="no" id="following"></span> Following
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© CodewithAP | <a href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
