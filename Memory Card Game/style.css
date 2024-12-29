@@ -1,0 +1,173 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    /* Gradient background */
+    color: #fff;
+    /* Add some padding around the body */
+    background: url('bg.jpg') no-repeat center center fixed;
+    /* Background image */
+    background-size: cover;
+}
+
+/* Title Section */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: glow 2s infinite alternate;
+    /* Glow effect for title */
+}
+
+/* Glow Animation for Title */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff6f61, 0 0 30px #ff6f61, 0 0 40px #ff6f61;
+    }
+
+    to {
+        text-shadow: 0 0 20px #ff6f61, 0 0 30px #ff9e80, 0 0 40px #ff9e80, 0 0 50px #ff9e80;
+    }
+}
+
+/* Card Container */
+.container {
+    width: 90%;
+    /* Responsive width for all devices */
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 cards per row */
+    grid-gap: 15px;
+    /* Space between cards */
+    justify-content: center;
+    align-items: center;
+    perspective: 1200px;
+    /* Perspective for 3D effect */
+}
+
+/* Card Styles */
+.card {
+    position: relative;
+    width: 100%;
+    /* Automatically adjusts to grid column size */
+    padding-bottom: 100%;
+    /* Maintain a square aspect ratio */
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Shadow for depth */
+    background: transparent;
+    /* Clear background */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+    /* Flip effect */
+}
+
+/* Card Faces */
+.frontSide,
+.backSide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fff;
+    /* Card border */
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
+    /* Inset shadow for depth */
+}
+
+/* Front Face */
+.frontSide {
+    transform: rotateY(180deg);
+    background: linear-gradient(to bottom, #fefefe, #ddd);
+    /* Subtle gradient for front */
+}
+
+/* Back Face */
+.backSide {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    /* Vibrant gradient for back */
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #eee;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    /* Footer transparency */
+}
+
+footer a {
+    color: #ff9e80;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-shadow: 0 0 5px #ff9e80;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        /* Smaller title font for mobile */
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 cards per row on smaller screens */
+        grid-gap: 10px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3.5rem;
+        /* Larger title font for desktops */
+    }
+
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        /* Ensure 4 cards per row for laptops */
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+}
