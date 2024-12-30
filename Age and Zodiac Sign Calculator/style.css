@@ -1,0 +1,101 @@
+/* CSS file */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff6a88, #2575fc);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: rgb(27, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(216, 4, 254);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(216, 4, 254);
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .calculator {
+    background-color: rgba(248, 248, 248, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(214, 206, 206, 0.3);
+  }
+  
+  input[type="date"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  button {
+    font-size: 1rem;
+    background-color: #ff6a88;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff9a8b;
+  }
+  
+  .results {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    color: rgb(216, 4, 254);
+  }
+  
+  footer .github-link {
+    text-decoration: none;
+    color: #ff9a8b;
+  }
+  
+  footer .github-link:hover {
+    color: rgb(43, 81, 231);
+  }
+  
