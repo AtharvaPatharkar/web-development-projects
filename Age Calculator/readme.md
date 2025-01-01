@@ -3,6 +3,10 @@
 
 An intuitive and interactive web-based application that allows users to calculate their age accurately in years, months, and days based on their date of birth. This project is perfect for learning fundamental concepts of **HTML**, **CSS**, and **JavaScript**.  
 
+🌐 **Live Demo**: [Age Calculator](https://atharvapatharkar.github.io/web-development-projects/Age%20Calculator/index.html)
+
+
+
 ![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)  
 ![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)  
 ![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -88,3 +92,12 @@ Follow these steps to contribute:
 
 ---
 
+## 🌐 All Project Link
+
+[Web Development Projects](https://atharvapatharkar.github.io/web-development-projects/)
+
+---
+
+## 🧑‍💻 Developer
+Developed with ❤️ by **CodeWithAP**.  
+GitHub: [AtharvaPatharkar](https://github.com/AtharvaPatharkar)
