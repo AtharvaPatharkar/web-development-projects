@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌆 Background Image Changer</h1>
+            <p>Change the background image of the page and adjust its position and size.</p>
+        </header>
+        <main>
+            <div class="image-uploader">
+                <label for="imageInput">Upload an image</label>
+                <input type="file" id="imageInput" accept="image/*">
+            </div>
+
+            <div class="options">
+                <label for="positionX">Position X:</label>
+                <input type="range" id="positionX" min="0" max="100" value="50">
+
+                <label for="positionY">Position Y:</label>
+                <input type="range" id="positionY" min="0" max="100" value="50">
+
+                <label for="size">Size:</label>
+                <input type="range" id="size" min="50" max="150" value="100">
+            </div>
+
+            <div class="output">
+                <h2>Current Background Settings</h2>
+                <p id="imageInfo">No image selected</p>
+            </div>
+        </main>
+    </div>
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 CodeWithAP. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
