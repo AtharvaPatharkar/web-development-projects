@@ -2,7 +2,7 @@
 
 **My Calculator** is a simple and user-friendly web application that performs basic arithmetic operations like addition, subtraction, multiplication, and division. Designed with simplicity in mind, this calculator provides a straightforward interface for performing quick calculations.
 
-🌐 **Live Demo**: [My Maths Game](https://atharvapatharkar.github.io/web-development-projects/My%20Maths%20Game/index.html) 
+🌐 **Live Demo**: [My Calculator](https://atharvapatharkar.github.io/web-development-projects/My%20Calculator/index.html) 
 
 ![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)  
 ![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)  
