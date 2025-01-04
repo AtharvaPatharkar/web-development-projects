@@ -2,7 +2,7 @@
 
 **My Countdown Timer** is a simple and effective web application that allows users to set a countdown for a specified amount of time. This app can be used for various purposes like setting reminders, cooking timers, or simply managing time for any task.
 
-🌐 **Live Demo**: [My Calculator](https://atharvapatharkar.github.io/web-development-projects/My%20Calculator/index.html)
+🌐 **Live Demo**: [My Calculator](https://atharvapatharkar.github.io/web-development-projects/My%20Countdown%20Timer/index.html)
 
 ![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)  
 ![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)  
