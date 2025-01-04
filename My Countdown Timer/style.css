@@ -1,0 +1,104 @@
+/* General reset for padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('bg.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+}
+
+/* Timer Container */
+.timer-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    border: 2px solid #ff6f61; /* Border with color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    text-align: center;
+    width: 350px;
+    position: relative;
+}
+
+/* Timer Display */
+.timer-display {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow */
+    margin-bottom: 20px;
+}
+
+/* Timer Controls Buttons */
+.timer-controls button, 
+.timer-input button {
+    background: linear-gradient(135deg, #ff6f61, #d91e18); /* Gradient background */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition for 2D effects */
+}
+
+/* Button hover effects */
+.timer-controls button:hover, 
+.timer-input button:hover {
+    transform: translateY(-3px); /* 2D hover effect */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Restart Button Specific Style */
+.timer-controls .restart {
+    background: linear-gradient(135deg, #17a2b8, #0f6674); /* Different gradient */
+}
+
+/* Timer Input */
+.timer-input {
+    margin-top: 20px;
+}
+
+.timer-input input {
+    border: 2px solid #ff6f61; /* Border */
+    border-radius: 5px;
+    padding: 5px;
+    width: 60%;
+    font-size: 1rem;
+}
+
+/* Background effects */
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('background.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Blur effect for depth */
+}
+
+/* 3D Button Effect */
+.timer-controls button:active {
+    transform: translateY(1px) scale(0.98); /* 3D press effect */
+}
+
+/* Additional styling */
+button:focus,
+input:focus {
+    outline: none; /* Remove default focus */
+}
+

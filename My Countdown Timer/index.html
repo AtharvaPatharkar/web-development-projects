@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            /* Hide scrollbar */
+        }
+
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Three.js background container -->
+    <div id="background"></div>
+
+    <div class="timer-container">
+        <div class="timer-display" id="timerDisplay">00:00:00</div>
+        <div class="timer-controls">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+            <button onclick="resetTimer()">Reset</button>
+            <button onclick="restartTimer()" class="restart">Restart</button>
+        </div>
+        <div class="timer-input">
+            <input type="number" id="inputMinutes" placeholder="Enter minutes">
+            <button onclick="setTimer()">Set Timer</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
