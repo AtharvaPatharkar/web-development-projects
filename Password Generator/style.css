@@ -1,0 +1,140 @@
+/* General Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff4400, #ff6e00, #ffffff, #e3dfdf, #12ff01 , #05a229);
+    color: #fff;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+/* Card Style */
+.card {
+    background: #1f1f2e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#result {
+    font-size: 1.2em;
+    flex: 1;
+    text-align: left;
+    padding-left: 10px;
+    color: #00e676;
+}
+
+/* Button Styles */
+.btn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #43a047;
+}
+
+.btn-large {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn i {
+    font-size: 1.2em;
+}
+
+/* Settings Section */
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: left;
+}
+
+.setting label {
+    font-size: 0.9em;
+    margin-right: 10px;
+    color: #ddd;
+}
+
+.setting input[type="checkbox"],
+.setting input[type="number"] {
+    margin-left: auto;
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #00b0ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #82b1ff;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .result-container {
+        padding: 8px;
+    }
+}
