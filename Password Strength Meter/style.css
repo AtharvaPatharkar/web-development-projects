@@ -1,0 +1,169 @@
+/* Base reset and styling */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(145deg, #74ebd5, #acb6e5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #f50202;
+  transition: background 0.3s ease;
+
+  background: url('bg.jpg') no-repeat center center fixed;
+  /* Background image */
+  background-size: cover;
+  /* Ensure the image covers the entire page */
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Header styling */
+header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff0000;
+  margin-bottom: 1.5rem;
+}
+
+/* Form styling */
+.field {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #bbff00;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.4s ease, background-color 0.4s ease;
+}
+
+.input:focus {
+  border-color: #6c63ff;
+  background-color: #eeff00;
+}
+
+/* Show/Hide button for password */
+.showBtn {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  color: #6c63ff;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.showBtn:hover {
+  color: #333;
+}
+
+/* Indicator styling */
+.indicator {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+  justify-content: center;
+}
+
+.indicator span {
+  flex: 1;
+  height: 10px;
+  border-radius: 5px;
+  transition: background-color 0.4s ease;
+  background-color: #e0e0e0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.weak.active {
+  background-color: #ff4f4f;
+}
+
+.medium.active {
+  background-color: #ffb74d;
+}
+
+.strong.active {
+  background-color: #66bb6a;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+/* Text display for strength message */
+.text {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: bold;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+footer a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #333;
+}
+
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  header {
+    font-size: 1.6rem;
+  }
+
+  .input {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
