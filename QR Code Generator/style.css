@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
+}
+
+/* Background and Body Styling */
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #283c86, #45a247);
+	color: #fff;
+	margin: 0;
+}
+
+/* Page Header */
+h1 {
+	margin-bottom: 20px;
+	font-size: 2.5em;
+	color: #ffffff;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	letter-spacing: 1px;
+	animation: fadeIn 1s ease-in-out;
+}
+
+/* Main Content Wrapper */
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+	padding: 25px;
+	border-radius: 15px;
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+	width: 320px;
+	text-align: center;
+	animation: slideUp 0.8s ease-in-out;
+}
+
+/* Input Field Styling */
+.input {
+	width: 90%;
+	padding: 12px;
+	margin-bottom: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	border-radius: 10px;
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+	outline: none;
+	transition: all 0.3s ease;
+}
+
+.input:focus {
+	border-color: #4caf50;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+/* Button Styling */
+.btn {
+	width: 90%;
+	padding: 12px;
+	background-color: #4caf50;
+	color: #ffffff;
+	border: none;
+	border-radius: 10px;
+	font-size: 1.1em;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s;
+	box-shadow: 0px 4px 10px rgba(76, 175, 80, 0.3);
+	margin-top: 10px;
+}
+
+.btn:hover {
+	background-color: #45a049;
+	transform: translateY(-2px);
+	box-shadow: 0px 6px 14px rgba(76, 175, 80, 0.4);
+}
+
+/* QR Code Image Styling */
+.code {
+	margin-top: 15px;
+	width: 220px;
+	height: 220px;
+	border: 2px solid rgba(255, 255, 255, 0.6);
+	border-radius: 15px;
+	box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.4);
+	background-color: #ffffff;
+	transition: transform 0.3s ease;
+}
+
+.code:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Toast Notification Styling */
+#toast {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #333;
+	color: #ffffff;
+	padding: 15px 25px;
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	transition: opacity 0.5s ease, transform 0.5s ease;
+	font-size: 0.9em;
+}
+
+#toast.show {
+	display: block;
+	opacity: 1;
+	transform: translateY(0);
+	animation: fadeIn 1s ease forwards;
+}
+
+/* Footer Section */
+footer {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 0.9em;
+	color: #ffffff;
+	opacity: 0.8;
+	animation: fadeIn 1s ease 1s forwards;
+}
+
+footer p {
+	margin-bottom: 5px;
+}
+
+footer a {
+	color: #4caf50;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+footer a:hover {
+	color: #81c784;
+	text-shadow: 0px 2px 8px rgba(76, 175, 80, 0.6);
+}
+
+/* Animations */
+@keyframes fadeIn {
+	0% { opacity: 0; transform: translateY(20px); }
+	100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+	0% { opacity: 0; transform: translateY(30px); }
+	100% { opacity: 1; transform: translateY(0); }
+}
