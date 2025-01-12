@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Rock Paper Scissors</h2>
+        <p id="startingPoint">Choose any one.</p>
+        <div class="flex-box" id="flex-box-rps">
+            <img src="images/Rock.jpg" alt="Rock" id="rock" width="150px" height="150px" onclick="selectChoice('rock')">
+            <img src="images/paper.jpeg" alt="Paper" id="paper" width="150px" height="150px" onclick="selectChoice('paper')">
+            <img src="images/scissors.jpg" alt="Scissors" id="scissors" width="150px" height="150px" onclick="selectChoice('scissors')">
+        </div>
+        <button id="playButton" onclick="playGame()">Play</button>
+        <button id="restartButton" style="display:none;" onclick="restartGame()">Restart</button>
+        <p class="copyright">
+            © 2025 AtharvaPatharkar 
+            <a href="https://github.com/AtharvaPatharkar" target="_blank">CodeWithAP</a>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
