@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Soft gradient */
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+  background: linear-gradient(135deg, #141e30, #243b55); /* Dark theme gradient */
+  color: #f0f0f0;
+}
+
+/* Toggle Button */
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+
+/* X and O Styling */
+.x-mark {
+  color: #ff5733; /* Bright orange for X */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.o-mark {
+  color: #3498db; /* Bright blue for O */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Result Box */
+.result-box {
+  display: none; /* Hidden initially */
+}
+
+/* Dark Theme Enhancements */
+body.dark-theme .x-mark {
+  color: #e74c3c;
+}
+
+body.dark-theme .o-mark {
+  color: #1abc9c;
+}
+
+.toggle-btn {
+  width: 50px;
+  height: 25px;
+  background: #ddd;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.toggle-btn.active {
+  background: #4caf50; /* Green when active */
+}
+
+.toggle-btn .inner-circle {
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 4px;
+  transition: transform 0.3s;
+}
+
+.toggle-btn.active .inner-circle {
+  transform: translateX(25px);
+}
+
+/* Header */
+header {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0077b6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+/* Select Box */
+.select-box {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #0077b6;
+  border-radius: 10px;
+  background: white;
+  width: 300px;
+  margin: 20px auto;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.select-box:hover {
+  transform: scale(1.05);
+}
+
+.select-box .title {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.select-box button {
+  background: #0077b6;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.select-box button:hover {
+  background: #005f87;
+  transform: scale(1.1);
+}
+
+/* Playboard */
+.play-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 320px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.play-area section {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.play-area span {
+  width: 90px;
+  height: 90px;
+  background: #eaf0f6;
+  border: 2px solid #0077b6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0077b6;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.play-area span:hover {
+  background: #cfdef3;
+  transform: scale(1.1);
+}
+
+/* Result Box */
+.result-box {
+  text-align: center;
+  background: #0077b6;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 20px auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.result-box .btn button {
+  background: #f44336;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.result-box .btn button:hover {
+  background: #d32f2f;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+footer a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #005f87;
+}
