@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Online Bookstore</h1>
+    </header>
+    <main>
+        <section class="filter-section">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="self-help">Self-Help</option>
+                <option value="biography">Biography</option>
+            </select>
+        </section>
+        <section class="books-section" id="books-section">
+            <!-- Books will be dynamically loaded here -->
+        </section>
+        <section class="cart-section">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <button id="checkout-btn">Checkout</button>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
