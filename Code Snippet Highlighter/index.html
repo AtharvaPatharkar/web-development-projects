@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Snippet Highlighter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💻 Code Snippet Highlighter</h1>
+            <p>Highlight your code in style with Prism.js</p>
+        </header>
+
+        <main>
+            <section class="code-input">
+                <textarea id="code-editor" placeholder="Write or paste your code here..."></textarea>
+                <button id="highlight-btn">Highlight Code</button>
+            </section>
+
+            <section class="code-output">
+                <pre><code id="highlighted-code" class="language-js">// Highlighted code will appear here...</code></pre>
+            </section>
+        </main>
+
+        <hr>
+
+        <footer>
+            <div class="copyright">
+                © 2025 AtharvaPatharkar. All rights reserved.
+            </div>
+            <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
