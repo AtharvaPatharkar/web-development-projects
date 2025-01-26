@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>💱 Currency Converter</h1>
+        <p>Convert currencies instantly with real-time exchange rates!</p>
+    </header>
+    <main>
+        <section id="converter">
+            <input type="number" id="amount" placeholder="Enter amount" />
+            <select id="from-currency">
+                <!-- Dynamically populated -->
+            </select>
+            <span>to</span>
+            <select id="to-currency">
+                <!-- Dynamically populated -->
+            </select>
+            <button id="convert-button">Convert</button>
+        </section>
+        <section id="result">
+            <h2>Converted Amount:</h2>
+            <p id="converted-value">--</p>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
