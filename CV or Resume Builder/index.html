@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV/Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CV/Resume Builder</h1>
+        <form id="resume-form">
+            <div class="form-field">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-field">
+                <label for="education">Education</label>
+                <input type="text" id="education" name="education" required>
+            </div>
+            <div class="form-field">
+                <label for="experience">Work Experience</label>
+                <textarea id="experience" name="experience" rows="4" required></textarea>
+            </div>
+            <div class="form-field">
+                <label for="skills">Skills</label>
+                <input type="text" id="skills" name="skills" required>
+            </div>
+            <button type="submit">Generate CV</button>
+        </form>
+        <div id="cv-output" class="cv-output">
+            <h2>Generated CV</h2>
+            <div id="cv-content"></div>
+            <button id="download-btn">Download CV</button>
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
