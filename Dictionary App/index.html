@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Dictionary App</h1>
+        <p>Look up word definitions, synonyms, and examples easily!</p>
+    </header>
+
+    <main>
+        <div class="dictionary-container">
+            <input type="text" id="wordInput" placeholder="Enter a word..." />
+            <button id="searchButton">Search</button>
+
+            <div id="wordDetails" class="hidden">
+                <h2 id="word"></h2>
+                <p><strong>Definition:</strong> <span id="definition"></span></p>
+                <p><strong>Synonyms:</strong> <span id="synonyms"></span></p>
+                <p><strong>Example:</strong> <span id="example"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
