@@ -65,6 +65,27 @@ header #search-bar:hover {
     transform: scale(1.05);
 }
 
+/* Updated #total-projects */
+#total-projects {
+    margin-top: 10px;
+    font-size: 22px; /* Slightly larger font */
+    font-weight: bold;
+    color: #ffffff; /* White text for better contrast */
+    text-align: center;
+    padding: 15px; /* Increased padding for a better layout */
+    border: 3px solid #FF5733; /* Bright orange border */
+    border-radius: 8px; /* Slightly rounded corners */
+    background: linear-gradient(45deg, #FF5733, #C70039); /* Gradient background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+#total-projects:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+
+
 /* Animation for gradient flow */
 @keyframes gradientFlow {
     0% {
@@ -81,7 +102,9 @@ header #search-bar:hover {
 main {
     padding: 30px;
     border: 2px solid black;
+    padding-bottom: 100px; /* Creates space before the footer */
 }
+
 /* Project List Styling */
 #project-list {
     list-style: none;
@@ -172,6 +195,14 @@ color:#ff0000;
     opacity: 1;
 }
 
+/* Add Black Line Separator */
+.black-separator {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin: 20px 0; /* Adjust spacing */
+}
+
 
 footer {
     text-align: center;
@@ -185,6 +216,9 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    position: relative; /* Remove fixed positioning for better spacing */
+    margin-top: 30px; /* Adds space between the footer and project list */
+
 }
 
 
@@ -248,3 +282,24 @@ footer a:hover {
         transform: rotate(360deg);
     }
 }
+
+
+/* Responsive Project List for Mobile */
+@media (max-width: 768px) {
+    #project-list {
+        grid-template-columns: 1fr; /* Single column on small screens */
+        padding: 15px;
+    }
+
+    #project-list li {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    header #search-bar {
+        width: 90%; /* Adjust width for better fit */
+    }
+}
+
+
+
