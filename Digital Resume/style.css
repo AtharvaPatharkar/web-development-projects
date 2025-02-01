@@ -1,0 +1,123 @@
+/* CSS file */
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e272e, #485460, #ff6b81);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.resume-container {
+    width: 80%;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    color: #ff6b81;
+    margin: 0;
+    text-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+}
+
+header .title {
+    margin: 5px 0 20px;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* Section Titles */
+section h2 {
+    border-bottom: 2px solid #ff6b81;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+/* Profile Section */
+.profile p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+/* Experience Section */
+.job h3 {
+    margin: 0;
+    color: #ff6b81;
+}
+
+.job p {
+    font-style: italic;
+    margin: 5px 0 10px;
+}
+
+.job ul {
+    margin: 0;
+    padding: 0 20px;
+    list-style-type: disc;
+}
+
+/* Skills Section */
+.skill-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-set span {
+    background: #485460;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+}
+
+/* Contact Section */
+.contact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer .github-link {
+    color: #ff6b81;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .github-link:hover {
+    text-decoration: underline;
+}
