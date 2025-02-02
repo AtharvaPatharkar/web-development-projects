@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 E-Commerce Product Page</h1>
+            <p>Explore our best-selling product!</p>
+        </header>
+
+        <main>
+            <section class="product">
+                <div class="product-image">
+                    <img src="unsplash.jpg" alt="Product Image" />
+                </div>
+                <div class="product-details">
+                    <h2>Product Nam: Watch</h2>
+                    <p class="price">₹5000</p>
+                    <p class="description">
+                        Stylish Analog Watch
+                        Elevate your look with this sleek analog watch. Durable, water-resistant, and perfect for any occasion.
+                    </p>
+                    <button id="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </section>
+
+            <section class="product-reviews">
+                <h3>Customer Reviews</h3>
+                <div id="reviews">
+                    <div class="review">
+                        <p><strong>Raj Joshi</strong> <span class="stars">⭐⭐⭐⭐⭐</span></p>
+                        <p>"Amazing product, highly recommend!"</p>
+                    </div>
+                    <div class="review">
+                        <p><strong>Ajay Kale</strong> <span class="stars">⭐⭐⭐⭐</span></p>
+                        <p>"Great quality, but a little expensive."</p>
+                    </div>
+                </div>
+
+                <h4>Add Your Review</h4>
+                <form id="reviewForm">
+                    <input type="text" id="reviewerName" placeholder="Your Name" required />
+                    <select id="reviewStars" required>
+                        <option value="5">⭐⭐⭐⭐⭐</option>
+                        <option value="4">⭐⭐⭐⭐</option>
+                        <option value="3">⭐⭐⭐</option>
+                        <option value="2">⭐⭐</option>
+                        <option value="1">⭐</option>
+                    </select>
+                    <textarea id="reviewText" placeholder="Write your review..." rows="4" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="copyright">
+                © 2025 AtharvaPatharkar. All rights reserved.
+            </div>
+            <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
