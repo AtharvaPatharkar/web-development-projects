@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🎉 Event Invitation Maker 🎨</h1>
+        <p>Create personalized invitations for your special events!</p>
+    </header>
+
+    <main>
+        <div id="form-container">
+            <h2>📝 Fill in Event Details</h2>
+            <form id="invitation-form">
+                <label for="event-title">Event Title:</label>
+                <input type="text" id="event-title" placeholder="Enter the event title" required>
+
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" required>
+
+                <label for="event-time">Time:</label>
+                <input type="time" id="event-time" required>
+
+                <label for="event-location">Location:</label>
+                <input type="text" id="event-location" placeholder="Enter the event location" required>
+
+                <label for="event-description">Description:</label>
+                <textarea id="event-description" rows="4" placeholder="Enter event details"></textarea>
+
+                <button type="button" id="generate-btn">Generate Invitation</button>
+            </form>
+        </div>
+
+        <div id="invitation-preview">
+            <h2>🎉 Your Invitation Preview</h2>
+            <div id="invitation-card">
+                <h3 id="preview-title">[Event Title]</h3>
+                <p id="preview-date">[Date]</p>
+                <p id="preview-time">[Time]</p>
+                <p id="preview-location">[Location]</p>
+                <p id="preview-description">[Description]</p>
+            </div>
+            <button id="download-btn" style="display: none;">Download Invitation</button>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <!-- Include html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
