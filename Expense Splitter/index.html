@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Splitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>💰 Expense Splitter</h1>
+        <p>Split expenses easily among your group!</p>
+    </header>
+    <main>
+        <section class="input-section">
+            <input type="text" id="person-name" placeholder="Enter Name" />
+            <input type="number" id="expense-amount" placeholder="Enter Expense" />
+            <button id="add-expense">Add</button>
+        </section>
+        <section id="expense-list-section">
+            <h2>Expenses</h2>
+            <ul id="expense-list"></ul>
+        </section>
+        <section id="result-section" class="hidden">
+            <h2>Result</h2>
+            <p id="total-expense"></p>
+            <p id="split-amount"></p>
+        </section>
+        <button id="calculate-split">Calculate Split</button>
+    </main>
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
