@@ -1,0 +1,139 @@
+/* CSS file */
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff, #ff9a9e,  #aa295d, #44ce5d, #902fcc);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    color: #444;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* File Controls */
+.file-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.file-controls input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.file-controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.file-controls button:hover {
+    background: #0056b3;
+}
+
+/* File List */
+.file-list {
+    text-align: left;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.file-list h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.file-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.file-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.file-list li button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file-list li button:hover {
+    background: #cc0000;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #555;
+}
+
+footer .github-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .github-link:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
