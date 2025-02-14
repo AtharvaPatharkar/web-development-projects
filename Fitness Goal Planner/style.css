@@ -1,0 +1,113 @@
+/* CSS file */
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    color: #444;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Input Section */
+.goal-input {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.goal-input form {
+    display: flex;
+    flex-direction: column;
+}
+
+.goal-input label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.goal-input input, .goal-input select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.goal-input button {
+    padding: 10px 15px;
+    background: #6a11cb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.goal-input button:hover {
+    background: #2575fc;
+}
+
+/* Progress Tracker */
+.progress-tracker {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.progress-tracker ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.progress-tracker li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #e0e7ff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #555;
+}
+
+footer .github-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .github-link:hover {
+    text-decoration: underline;
+}
