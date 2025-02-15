@@ -1,0 +1,111 @@
+/* CSS file */
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #9cecfb, #65c7f7, #0052d4, #9cecfb, #65c7f7, #0052d4);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Header Styles */
+header h1 {
+    font-size: 2.5rem;
+    color: #444;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Input Section */
+.input-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.input-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-section input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-section button {
+    padding: 10px 15px;
+    background: #0052d4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.input-section button:hover {
+    background: #65c7f7;
+}
+
+/* Log Section */
+.log-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.log-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.log-section li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #d9faff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #555;
+}
+
+footer .github-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .github-link:hover {
+    text-decoration: underline;
+}
