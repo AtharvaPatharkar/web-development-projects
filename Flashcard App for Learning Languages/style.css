@@ -1,0 +1,79 @@
+/* CSS file */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff6b81, hsl(146, 85%, 43%), #2575fc,  #ff6b81, #6a11cb, #2575fc,  #ff6b81);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.flashcard {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.word {
+    font-size: 36px;
+}
+
+.translation {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #f7df1e;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6a11cb;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2575fc;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #f7df1e;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
