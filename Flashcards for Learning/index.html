@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards for Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Flashcards for Learning</h1>
+            <p>Create, study, and track your learning progress with flashcards!</p>
+        </header>
+
+        <main>
+            <section class="flashcard-form">
+                <h2>Create a Flashcard</h2>
+                <input type="text" id="question" placeholder="Enter your question" />
+                <input type="text" id="answer" placeholder="Enter the answer" />
+                <button id="add-flashcard">Add Flashcard</button>
+            </section>
+
+            <section class="flashcards">
+                <h2>Your Flashcards</h2>
+                <div id="flashcard-list"></div>
+            </section>
+
+            <section class="study">
+                <h2>Study Mode</h2>
+                <button id="start-study">Start Studying</button>
+                <div id="study-card" class="study-card"></div>
+                <button id="next-card" class="next-card">Next</button>
+            </section>
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

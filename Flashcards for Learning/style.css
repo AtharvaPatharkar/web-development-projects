@@ -1,0 +1,123 @@
+/* CSS file */
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s ease-in-out;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header Styles */
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Form Styles */
+.flashcard-form input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 60%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.flashcard-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flashcard-form button:hover {
+    background-color: #45a049;
+}
+
+/* Flashcard List Styles */
+.flashcards {
+    margin-top: 30px;
+}
+
+#flashcard-list {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.flashcard-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Study Mode Styles */
+.study {
+    margin-top: 50px;
+}
+
+.study-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    display: none;
+}
+
+#next-card {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#next-card:hover {
+    background-color: #007bb5;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #555;
+}
+
+footer .github-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .github-link:hover {
+    text-decoration: underline;
+}
