@@ -1,0 +1,125 @@
+/* CSS file */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff6f00, #ff9800, #ff5722);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+    max-width: 1000px;
+    width: 100%;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.profile, .repos {
+    margin: 20px 0;
+}
+
+.profile-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#name {
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+#bio {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+#location {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+#githubLink {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0288d1;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#githubLink:hover {
+    background-color: #01579b;
+}
+
+.repos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.repo-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.repo-card h3 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+
+.repo-card a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.repo-card a:hover {
+    background-color: #388e3c;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+footer .copyright {
+    margin-bottom: 10px;
+}
+
+footer a.github-link {
+    color: #0288d1;
+    text-decoration: none;
+}
+
+footer a.github-link:hover {
+    text-decoration: underline;
+}
