@@ -1,0 +1,136 @@
+/* CSS file */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #38d1f8, #19e244, #209ebd);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff0000;
+  }
+  
+  p {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ff0000;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+  }
+  
+  form {
+    margin-bottom: 30px;
+  }
+  
+  #habit-input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 60%;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff6a88;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff9a8b;
+  }
+  
+  .habit-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .habit-item {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .habit-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .habit-item h3 {
+    font-size: 1.5rem;
+    color: #ff9a8b;
+  }
+  
+  .habit-item p {
+    color: #fff;
+  }
+  
+  .habit-item button {
+    background-color: #d4a5a5;
+  }
+  
+  .habit-item button:hover {
+    background-color: #ff6a88;
+  }
+  
+  .progress {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  
+  footer .github-link {
+    text-decoration: none;
+    color: #ff9a8b;
+  }
+  
+  footer .github-link:hover {
+    color: white;
+  }
+  
