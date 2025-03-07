@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calendar-container">
+        <header>
+            <h1 id="calendar-title">Interactive Calendar</h1>
+            <div class="controls">
+                <button id="prev-month">❮</button>
+                <span id="month-year"></span>
+                <button id="next-month">❯</button>
+            </div>
+        </header>
+
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div id="event-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Add Event</h2>
+                <input type="text" id="event-title" placeholder="Event Title">
+                <button id="add-event">Add Event</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <footer>
+            <div class="copyright">
+                © 2025 AtharvaPatharkar. All rights reserved.
+            </div>
+            <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
