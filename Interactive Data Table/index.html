@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Data Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Data Table</h1>
+        <p>Dynamic table with sorting, filtering, and pagination.</p>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <input type="text" id="searchInput" placeholder="Search for names...">
+        </section>
+
+        <section class="table-section">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Name</th>
+                        <th onclick="sortTable(1)">Age</th>
+                        <th onclick="sortTable(2)">City</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Dynamic data will be inserted here -->
+                </tbody>
+            </table>
+            <div id="pagination"></div>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 CodeWAtharvaPatharkarithAP. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
