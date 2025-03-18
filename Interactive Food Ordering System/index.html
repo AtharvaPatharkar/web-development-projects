@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Food Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="food-order-container">
+        <header>
+            <h1>🍔 Interactive Food Ordering</h1>
+            <p>Choose your favorite items, customize your order, and see the total cost live!</p>
+        </header>
+
+        <form id="food-order-form">
+            <div class="menu-item">
+                <label for="burger">🍔 Burger (₹199):</label>
+                <input type="number" id="burger" name="burger" min="0" value="0">
+            </div>
+            <div class="menu-item">
+                <label for="pizza">🍕 Pizza (₹299):</label>
+                <input type="number" id="pizza" name="pizza" min="0" value="0">
+            </div>
+            <div class="menu-item">
+                <label for="fries">🍟 Fries (₹199):</label>
+                <input type="number" id="fries" name="fries" min="0" value="0">
+            </div>
+            <div class="menu-item">
+                <label for="soda">🥤 Soda (₹99):</label>
+                <input type="number" id="soda" name="soda" min="0" value="0">
+            </div>
+
+            <button type="button" id="calculate-btn" class="calculate-btn">Calculate Total</button>
+        </form>
+
+        <div class="order-summary">
+            <h2>🛒 Order Summary</h2>
+            <p>Total Items: <span id="total-items">0</span></p>
+            <p>Total Cost: <span id="total-cost">₹00</span></p>
+        </div>
+
+        <hr>
+
+        <footer>
+            <div class="copyright">
+                © 2025 AtharvaPatharkar. All rights reserved.
+            </div>
+            <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

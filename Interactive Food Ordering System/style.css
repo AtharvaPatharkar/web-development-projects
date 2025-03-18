@@ -1,0 +1,130 @@
+/* CSS file */
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2f3640, #ff6b6b, #1dd1a1);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Food Order Container */
+.food-order-container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    width: 90%;
+    max-width: 500px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff6b6b;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.menu-item label {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #1dd1a1;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.calculate-btn {
+    background: #1dd1a1;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(29, 209, 161, 0.5);
+    transition: all 0.3s ease;
+}
+
+.calculate-btn:hover {
+    background: #10ac84;
+    box-shadow: 0 5px 15px rgba(16, 172, 132, 0.7);
+}
+
+.order-summary {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.order-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1dd1a1;
+}
+
+.order-summary p {
+    font-size: 1.1rem;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    height: 2px;
+    background: #1dd1a1;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+footer .github-link {
+    color: #ffdd59;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .github-link:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
