@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Org Chart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>👥 Interactive Org Chart</h1>
+        <p>Visualize your team hierarchy dynamically with expandable/collapsible sections.</p>
+    </header>
+
+    <main>
+        <div id="org-chart">
+            <ul>
+                <li>
+                    <div class="person">
+                        <p class="name">CEO</p>
+                        <button class="toggle-btn">+</button>
+                        <div class="details">
+                            <ul>
+                                <li>
+                                    <div class="person">
+                                        <p class="name">CTO</p>
+                                        <button class="toggle-btn">+</button>
+                                        <div class="details">
+                                            <ul>
+                                                <li>
+                                                    <div class="person">
+                                                        <p class="name">Developer 1</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="person">
+                                                        <p class="name">Developer 2</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="person">
+                                        <p class="name">CFO</p>
+                                        <button class="toggle-btn">+</button>
+                                        <div class="details">
+                                            <ul>
+                                                <li>
+                                                    <div class="person">
+                                                        <p class="name">Accountant</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
