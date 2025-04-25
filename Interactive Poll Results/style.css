@@ -1,0 +1,106 @@
+/* CSS file */
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e272e, #34ace0, #ffb142);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Poll Container */
+.poll-container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    width: 90%;
+    max-width: 500px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #34ace0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.option {
+    margin: 10px 0;
+    text-align: left;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.vote-btn {
+    background: #34ace0;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(52, 172, 224, 0.5);
+    transition: all 0.3s ease;
+}
+
+.vote-btn:hover {
+    background: #227093;
+    box-shadow: 0 5px 15px rgba(34, 112, 147, 0.7);
+}
+
+canvas {
+    margin-top: 20px;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    height: 2px;
+    background: #34ace0;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+footer .github-link {
+    color: #ffdd59;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .github-link:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

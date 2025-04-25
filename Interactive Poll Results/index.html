@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Poll Results</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="poll-container">
+        <header>
+            <h1>🗳️ Cast Your Vote</h1>
+            <p>Vote on your favorite topic and see live results!</p>
+        </header>
+
+        <form id="poll-form">
+            <div class="option">
+                <input type="radio" id="option1" name="poll" value="Option 1">
+                <label for="option1">Option 1</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option2" name="poll" value="Option 2">
+                <label for="option2">Option 2</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option3" name="poll" value="Option 3">
+                <label for="option3">Option 3</label>
+            </div>
+            <button type="submit" class="vote-btn">Submit Vote</button>
+        </form>
+
+        <canvas id="pollChart"></canvas>
+
+        <hr>
+
+        <footer>
+            <div class="copyright">
+                © 2025 AtharvaPatharkar. All rights reserved.
+            </div>
+            <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
