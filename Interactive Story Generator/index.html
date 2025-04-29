@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Story Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 Interactive Story Generator</h1>
+            <p>Answer a few questions to create your own story!</p>
+        </header>
+
+        <main>
+            <section class="question-section">
+                <h2>Step 1: Choose Your Adventure</h2>
+                <form id="story-form">
+                    <label for="hero">Select a hero:</label>
+                    <select id="hero" required>
+                        <option value="Knight">A brave knight</option>
+                        <option value="Wizard">A wise wizard</option>
+                        <option value="Explorer">An adventurous explorer</option>
+                    </select>
+
+                    <label for="quest">What is their quest?</label>
+                    <input type="text" id="quest" placeholder="Enter a quest" required>
+
+                    <button type="submit">Generate Story</button>
+                </form>
+            </section>
+
+            <section class="story-section">
+                <h2>Your Story</h2>
+                <p id="story-output">Your story will appear here!</p>
+            </section>
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
