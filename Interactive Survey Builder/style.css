@@ -1,0 +1,79 @@
+/* CSS file */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #1e3c72);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+
+
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #fff;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.survey-builder {
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #2a5298;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #1e3c72;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+footer a {
+    color: #ffda79;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

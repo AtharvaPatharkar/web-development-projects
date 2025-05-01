@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Survey Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌟 Interactive Survey Builder 🌟</h1>
+        <p>Create and customize your surveys with ease!</p>
+    </header>
+
+    <main>
+        <div class="survey-builder">
+            <h2>Build Your Survey</h2>
+            <form id="surveyForm">
+                <label for="questionType">Select Question Type:</label>
+                <select id="questionType">
+                    <option value="text">Text Input</option>
+                    <option value="multipleChoice">Multiple Choice</option>
+                </select>
+                <input type="text" id="questionText" placeholder="Enter your question" />
+                <button type="button" id="addQuestion">Add Question</button>
+            </form>
+
+            <div id="surveyPreview">
+                <h3>Survey Preview</h3>
+                <ul id="questionList"></ul>
+            </div>
+        </div>
+    </main>
+
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
