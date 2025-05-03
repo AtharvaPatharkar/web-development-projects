@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Interactive To-Do List with Categories</h1>
+      <p>Organize your tasks by categories and track your progress easily.</p>
+    </header>
+
+    <div class="task-input">
+      <input type="text" id="task-input" placeholder="Add a new task" />
+      <select id="category-select">
+        <option value="work">Work</option>
+        <option value="personal">Personal</option>
+        <option value="urgent">Urgent</option>
+      </select>
+      <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <div class="task-list">
+      <h2>Your Tasks</h2>
+      <div class="task-category" id="work-category">
+        <h3>Work</h3>
+        <ul id="work-list"></ul>
+      </div>
+      <div class="task-category" id="personal-category">
+        <h3>Personal</h3>
+        <ul id="personal-list"></ul>
+      </div>
+      <div class="task-category" id="urgent-category">
+        <h3>Urgent</h3>
+        <ul id="urgent-list"></ul>
+      </div>
+    </div>
+
+    <hr>
+
+    <footer>
+      <div class="copyright">
+        © 2025 AtharvaPatharkar. All rights reserved.
+      </div>
+      <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
