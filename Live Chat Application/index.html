@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Live Chat Application</h1>
+        <p>Connect and chat in real-time with others!</p>
+    </header>
+
+    <main>
+        <div class="chat-container">
+            <div class="room-selection">
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <input type="text" id="room" placeholder="Enter room name" required>
+                <button id="join-room">Join Room</button>
+            </div>
+            <div class="chat-room hidden">
+                <div id="messages" class="messages">
+                    <!-- Messages will appear here -->
+                </div>
+                <div class="message-form">
+                    <input type="text" id="message-input" placeholder="Type a message..." required>
+                    <button id="send-message">Send</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <hr>
+
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
