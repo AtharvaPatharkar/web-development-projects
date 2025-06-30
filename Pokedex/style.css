@@ -1,0 +1,120 @@
+/* CSS file */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f953c6, #b91d73);
+    color: rgb(255, 246, 246);
+    text-align: center;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+
+
+
+}
+
+header {
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.search-section {
+    margin: 20px 0;
+}
+
+#search {
+    padding: 10px;
+    font-size: 1rem;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#searchBtn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background: #6a11cb;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+#searchBtn:hover {
+    background: #2575fc;
+}
+
+.pokemon-card {
+    display: inline-block;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.pokemon-card.hidden {
+    display: none;
+}
+
+#pokemon-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+}
+
+
+
+footer {
+    position: fixed; /* Keeps the footer fixed at the bottom of the viewport */
+    bottom: 0; /* Aligns it at the bottom */
+    left: 50%; /* Centers it horizontally */
+    transform: translateX(-50%); /* Adjusts for the center alignment */
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Aligns items vertically if needed */
+    justify-content: center; /* Centers the content vertically */
+    align-items: center; /* Centers the content horizontally */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional background for better visibility */
+    width: 100%; /* Ensures it spans the full width */
+}
+
+footer .copyright {
+    color: #bbb;
+}
+
+footer a.github-link {
+    color: #0288d1;
+    text-decoration: none;
+    margin-top: 5px; /* Adds spacing between the elements */
+}
+
+footer a.github-link:hover {
+    text-decoration: underline;
+}

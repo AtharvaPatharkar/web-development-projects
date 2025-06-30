@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🛡️ Pokedex</h1>
+        <p>Search your favorite Pokemon!</p>
+    </header>
+    <main>
+        <section class="search-section">
+            <input type="text" id="search" placeholder="Enter Pokemon name or ID" />
+            <button id="searchBtn">Search</button>
+        </section>
+        <section id="pokemon-card" class="pokemon-card hidden">
+            <img id="pokemon-image" alt="Pokémon Image">
+            <h2 id="pokemon-name"></h2>
+            <p><strong>Type:</strong> <span id="pokemon-type"></span></p>
+            <p><strong>Abilities:</strong> <span id="pokemon-abilities"></span></p>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
