@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🍅 Pomodoro Task Manager</h1>
+        <p>Boost your productivity with the Pomodoro technique!</p>
+    </header>
+    <main>
+        <section id="task-manager">
+            <h2>Task List</h2>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Add a new task" required>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="task-list">
+                <!-- Tasks will be displayed here -->
+            </ul>
+        </section>
+        <section id="pomodoro-timer">
+            <h2>Pomodoro Timer</h2>
+            <div id="timer-display">25:00</div>
+            <div id="timer-controls">
+                <button id="start-timer">Start</button>
+                <button id="pause-timer" disabled>Pause</button>
+                <button id="reset-timer">Reset</button>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
