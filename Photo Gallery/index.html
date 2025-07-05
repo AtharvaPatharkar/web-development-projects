@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="gallery-item" onclick="openLightbox();currentSlide(1)">
+                <img src="image1.jpg" alt="Image 1" class="gallery-image">
+            </div>
+            <div class="gallery-item" onclick="openLightbox();currentSlide(2)">
+                <img src="image2.jpg" alt="Image 2" class="gallery-image">
+            </div>
+            <div class="gallery-item" onclick="openLightbox();currentSlide(3)">
+                <img src="image3.jpg" alt="Image 3" class="gallery-image">
+            </div>
+            <div class="gallery-item" onclick="openLightbox();currentSlide(4)">
+                <img src="image4.jpg" alt="Image 4" class="gallery-image">
+            </div>
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="Full Image">
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="copyright">
+            © 2024 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
