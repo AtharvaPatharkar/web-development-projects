@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Color</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="rndm">
-      <h1>RANDOM COLOR</h1>
-      <div class="color_gen">
-        <button id="random">Change Background Color</button>
-        <button id="gradc">Change Background Gradient Color</button>
-        <button class="brndm">Change Button Background</button>
-      </div>
-    </div>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Random Color Generator</h1>
+        <p>Click the button to generate a random color with its RGB and Hex values!</p>
+    </header>
+
+    <main>
+        <div id="color-display" class="color-box">
+            <p id="rgb-value">RGB: 255, 0, 0</p>
+            <p id="hex-value">Hex: #FF0000</p>
+        </div>
+        <button id="generate-btn">Generate Random Color</button>
+    </main>
+
+    <hr>
     <footer>
-      <p>&copy; 2025 AtharvaPatharkar</p>
-      <a href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
     </footer>
-    
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
