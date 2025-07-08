@@ -1,0 +1,92 @@
+/* CSS file */
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #f9b7ff, #ffdd94, #c2e9fb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: #333;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 100px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    color: #4f4f4f;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#joke-container {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border: 2px dashed #f9b7ff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#new-joke-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#new-joke-btn:hover {
+    background: #e64c3c;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+.github-link {
+    color: #ff6f61;
+    text-decoration: none;
+    font-size: 14px;
+}
