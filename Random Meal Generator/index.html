@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Meal Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🍽️ Random Meal Generator</h1>
+        <p>Get random meal ideas, including recipes and ingredients!</p>
+    </header>
+
+    <main>
+        <button id="generate-meal" onclick="getRandomMeal()">Get Random Meal</button>
+
+        <div id="meal-details" class="hidden">
+            <h2 id="meal-name"></h2>
+            <img id="meal-image" src="" alt="Meal Image" />
+            <h3>Ingredients</h3>
+            <ul id="ingredients-list"></ul>
+            <h3>Instructions</h3>
+            <p id="instructions"></p>
+        </div>
+    </main>
+
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
