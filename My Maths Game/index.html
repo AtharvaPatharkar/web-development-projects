@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>🧮 Math Quiz Game</h1>
+            <p>Solve random math problems and track your time and score!</p>
+        </header>
+        
+        <main>
+            <div class="question-section">
+                <h2 id="questionText">What is 5 + 3?</h2>
+            </div>
+            <div class="answer-section">
+                <input type="number" id="userAnswer" placeholder="Your answer" />
+                <button id="submitAnswer">Submit Answer</button>
+            </div>
+            <div class="score-section">
+                <p>Score: <span id="score">0</span></p>
+                <p>Time Left: <span id="timer">30</span> seconds</p>
+            </div>
+            <div class="result-section">
+                <p id="resultMessage"></p>
+            </div>
+        </main>
+    </div>
+
+    <hr>
+    
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
