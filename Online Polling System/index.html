@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Polling System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Polling System</h1>
+        <p>Vote for your favorite option and see the live results!</p>
+    </header>
+
+    <main>
+        <div id="poll-container">
+            <h2>What is your favorite programming language?</h2>
+            <form id="poll-form">
+                <label>
+                    <input type="radio" name="poll-option" value="JavaScript"> JavaScript
+                </label><br>
+                <label>
+                    <input type="radio" name="poll-option" value="Python"> Python
+                </label><br>
+                <label>
+                    <input type="radio" name="poll-option" value="Java"> Java
+                </label><br>
+                <label>
+                    <input type="radio" name="poll-option" value="C++"> C++
+                </label><br>
+                <button type="submit" id="vote-button">Vote</button>
+            </form>
+
+            <div id="results">
+                <h3>Poll Results:</h3>
+                <p>JavaScript: <span id="js-votes">0</span> votes</p>
+                <p>Python: <span id="python-votes">0</span> votes</p>
+                <p>Java: <span id="java-votes">0</span> votes</p>
+                <p>C++: <span id="cpp-votes">0</span> votes</p>
+            </div>
+        </div>
+    </main>
+
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
