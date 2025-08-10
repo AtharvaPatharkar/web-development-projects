@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 Shopping Cart</h1>
+            <p>Add items, manage quantities, and checkout seamlessly!</p>
+        </header>
+        <div class="products">
+            <h2>Products</h2>
+            <div class="product" data-id="1">
+                <p>Cinnamon</p>
+                <p>₹50</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2">
+                <p>Mustard Seed</p>
+                <p>₹40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3">
+                <p>Clove</p>
+                <p>₹100</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="4">
+                <p>Coriander</p>
+                <p>₹30</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="5">
+                <p>Cumin</p>
+                <p>₹60</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="6">
+                <p>Dal Tadka</p>
+                <p>₹120</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="7">
+                <p>Chili Powder</p>
+                <p>₹70</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="8">
+                <p>Basmati Rice</p>
+                <p>₹200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="9">
+                <p>Turmeric</p>
+                <p>₹40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="10">
+                <p>Garam Masala</p>
+                <p>₹80</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="11">
+                <p>Cardamom</p>
+                <p>₹150</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="12">
+                <p>Asafoetida (Hing)</p>
+                <p>₹200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="13">
+                <p>Sambar Powder</p>
+                <p>₹90</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cart items will appear here -->
+                </tbody>
+            </table>
+            <div class="cart-total">
+                <p>Total: ₹<span id="total-price">0</span></p>
+                <button id="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
