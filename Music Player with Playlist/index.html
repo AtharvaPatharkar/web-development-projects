@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player with Playlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Music Player</h1>
+    <p>Play your favorite songs with ease!</p>
+  </header>
+
+  <div class="container">
+    <div class="music-player">
+      <audio id="audio" controls>
+        <source id="audio-source" src="song1.mp3" type="audio/mp3">
+      </audio>
+
+      <div class="player-controls">
+        <button id="prev" onclick="changeSong(-1)">❮</button>
+        <button id="play-pause" onclick="togglePlay()">▶️</button>
+        <button id="next" onclick="changeSong(1)">❯</button>
+      </div>
+
+      <div class="volume-control">
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1" onchange="setVolume(this.value)">
+      </div>
+
+      <div class="playlist">
+        <h3>Playlist</h3>
+        <ul id="playlist">
+          <li onclick="changeSongTo(0)">Song 1</li>
+          <li onclick="changeSongTo(1)">Song 2</li>
+          <li onclick="changeSongTo(2)">Song 3</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <footer>
+    <div class="copyright">
+      © 2025 AtharvaPatharkar. All rights reserved.
+    </div>
+    <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
