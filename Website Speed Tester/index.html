@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Speed Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Website Speed Tester 🖥️</h1>
+            <p>Test the speed and performance of any website in real-time.</p>
+        </header>
+
+        <section class="speed-test">
+            <label for="url">Enter Website URL:</label>
+            <input type="text" id="url" placeholder="e.g. https://example.com">
+            <button id="test-speed">Test Speed</button>
+
+            <div id="result" class="result">
+                <h2>Test Results:</h2>
+                <p><strong>Performance Score:</strong> <span id="performance"></span></p>
+                <p><strong>Load Time:</strong> <span id="load-time"></span> seconds</p>
+                <p><strong>First Contentful Paint:</strong> <span id="fcp"></span> seconds</p>
+                <p><strong>Largest Contentful Paint:</strong> <span id="lcp"></span> seconds</p>
+            </div>
+        </section>
+    </div>
+
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

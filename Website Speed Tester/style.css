@@ -1,0 +1,85 @@
+/* CSS file */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a1b9a, #f44336, #2196f3);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.speed-test {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 30px;
+}
+
+.result p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+hr {
+    margin: 30px 0;
+    border: 1px solid #fff;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.github-link {
+    color: #fff;
+    text-decoration: none;
+}
