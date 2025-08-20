@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordle Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Wordle Clone</h1>
+      <p>Guess the hidden 5-letter word in 6 attempts!</p>
+    </header>
+
+    <div class="game-container">
+      <div id="board" class="board"></div>
+      <div class="input-container">
+        <input type="text" id="guess" maxlength="5" autofocus placeholder="Enter your guess">
+        <button id="submitGuess">Submit Guess</button>
+      </div>
+    </div>
+
+    <hr>
+    <footer>
+      <div class="copyright">
+        © 2025 AtharvaPatharkar. All rights reserved.
+      </div>
+      <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
