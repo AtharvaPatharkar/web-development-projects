@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Plant Care Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🌱 Virtual Plant Care Simulator 🌱</h1>
+        <p>Take care of your virtual plant by watering, feeding, and nurturing it!</p>
+    </header>
+
+    <main>
+        <div class="plant-container">
+            <div id="plant-stage" class="plant small">
+                <img src="plant-seedling.png" alt="Seedling" id="plant-image">
+            </div>
+            <div class="actions">
+                <button id="water-btn">💧 Water</button>
+                <button id="feed-btn">🍎 Feed</button>
+                <button id="sun-btn">☀️ Sunlight</button>
+            </div>
+            <div class="status">
+                <p><strong>Health:</strong> <span id="health">50</span></p>
+                <p><strong>Growth Stage:</strong> <span id="growth-stage">Seedling</span></p>
+            </div>
+        </div>
+    </main>
+
+    <hr>
+
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
