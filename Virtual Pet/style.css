@@ -1,0 +1,81 @@
+/* CSS file */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffe259, #ffa751, #43cea2, #185a9d);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: #333;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.pet-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.pet-display {
+    margin-right: 20px;
+}
+
+.pet-display img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.status-display {
+    text-align: left;
+}
+
+.status-display p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #444;
+}
+
+.controls button {
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6f61;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.controls button:hover {
+    background: #e64c3c;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
