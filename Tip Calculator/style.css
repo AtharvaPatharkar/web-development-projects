@@ -1,0 +1,125 @@
+/* CSS file */
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body setup with a gradient background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff5722, #ff9800, #ff6f00);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Main container for all content */
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    color: white;
+}
+
+/* Header styles */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #d1d1d1;
+}
+
+/* Calculator section */
+.calculator {
+    margin-top: 30px;
+}
+
+.calculator label {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    display: block;
+}
+
+.calculator input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calculator button {
+    padding: 15px 25px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.calculator button:hover {
+    background-color: #388e3c;
+    transform: translateY(-3px);
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.result span {
+    font-weight: bold;
+}
+
+footer {
+    position: fixed; /* Keeps the footer fixed at the bottom of the viewport */
+    bottom: 0; /* Aligns it at the bottom */
+    left: 50%; /* Centers it horizontally */
+    transform: translateX(-50%); /* Adjusts for the center alignment */
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Aligns items vertically if needed */
+    justify-content: center; /* Centers the content vertically */
+    align-items: center; /* Centers the content horizontally */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional background for better visibility */
+    width: 100%; /* Ensures it spans the full width */
+}
+
+footer .copyright {
+    color: #bbb;
+}
+
+footer a.github-link {
+    color: #0288d1;
+    text-decoration: none;
+    margin-top: 5px; /* Adds spacing between the elements */
+}
+
+footer a.github-link:hover {
+    text-decoration: underline;
+}

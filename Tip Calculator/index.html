@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tip Calculator 💰</h1>
+            <p>Calculate your tip based on your total bill and tip percentage in Indian Rupees (INR)</p>
+        </header>
+        <section class="calculator">
+            <label for="bill">Bill Amount: ₹</label>
+            <input type="number" id="bill" placeholder="Enter bill amount">
+
+            <label for="tip">Tip Percentage: %</label>
+            <input type="number" id="tip" placeholder="Enter tip percentage">
+
+            <button id="calculate">Calculate Tip</button>
+
+            <div id="result" class="result">
+                <p>Your Tip:<span id="tipAmount"> ₹ 0.00</span></p>
+                <p>Total Amount: <span id="totalAmount"> ₹ 0.00</span></p>
+            </div>
+        </section>
+    </div>
+
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
