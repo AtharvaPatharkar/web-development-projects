@@ -1,0 +1,103 @@
+/* CSS file */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #16a085, #f4d03f, #e74c3c, #8e44ad);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding: 20px;
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#story-text {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+#submit-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #8e44ad;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#submit-btn:hover {
+    background: #732d91;
+}
+
+footer {
+    position: fixed; /* Keeps the footer fixed at the bottom of the viewport */
+    bottom: 0; /* Aligns it at the bottom */
+    left: 50%; /* Centers it horizontally */
+    transform: translateX(-50%); /* Adjusts for the center alignment */
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Aligns items vertically if needed */
+    justify-content: center; /* Centers the content vertically */
+    align-items: center; /* Centers the content horizontally */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional background for better visibility */
+    width: 100%; /* Ensures it spans the full width */
+}
+
+footer .copyright {
+    color: #bbb;
+}
+
+footer a.github-link {
+    color: #0288d1;
+    text-decoration: none;
+    margin-top: 5px; /* Adds spacing between the elements */
+}
+
+footer a.github-link:hover {
+    text-decoration: underline;
+}
