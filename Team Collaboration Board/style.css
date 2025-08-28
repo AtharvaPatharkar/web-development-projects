@@ -1,0 +1,150 @@
+/* CSS file */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #ff6a88, #2575fc);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: rgb(49, 39, 39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  width: 30%;
+}
+
+.column h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ff6a6a;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  background-color: #ffffff;
+  color: #f57c7c;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: move;
+}
+
+button {
+  font-size: 1rem;
+  background-color: #ff6a88;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: rgb(34, 34, 33);
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #ff1a1a;
+}
+
+button:hover {
+  background-color: #ff9a8b;
+}
+
+footer {
+  position: fixed; /* Keeps the footer fixed at the bottom of the viewport */
+  bottom: 0; /* Aligns it at the bottom */
+  left: 50%; /* Centers it horizontally */
+  transform: translateX(-50%); /* Adjusts for the center alignment */
+  font-size: 1rem;
+  color: #f53a3a;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Aligns items vertically if needed */
+  justify-content: center; /* Centers the content vertically */
+  align-items: center; /* Centers the content horizontally */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Optional background for better visibility */
+  width: 100%; /* Ensures it spans the full width */
+}
+
+footer .copyright {
+  color: #bbb;
+}
+
+footer a.github-link {
+  color: #0288d1;
+  text-decoration: none;
+  margin-top: 5px; /* Adds spacing between the elements */
+}
+
+footer a.github-link:hover {
+  text-decoration: underline;
+}

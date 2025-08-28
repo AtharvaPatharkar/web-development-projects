@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Collaboration Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Team Collaboration Board</h1>
+    <p>Manage your tasks, add comments, and organize projects seamlessly!</p>
+  </header>
+
+  <div class="container">
+    <div class="board">
+      <div class="column" id="todo-column">
+        <h2>To Do</h2>
+        <ul class="task-list" id="todo-list" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <!-- Tasks will be dynamically added here -->
+        </ul>
+        <button class="add-task-btn" onclick="addTask('todo')">Add Task</button>
+      </div>
+
+      <div class="column" id="inprogress-column">
+        <h2>In Progress</h2>
+        <ul class="task-list" id="inprogress-list" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <!-- Tasks will be dynamically added here -->
+        </ul>
+        <button class="add-task-btn" onclick="addTask('inprogress')">Add Task</button>
+      </div>
+
+      <div class="column" id="completed-column">
+        <h2>Completed</h2>
+        <ul class="task-list" id="completed-list" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <!-- Tasks will be dynamically added here -->
+        </ul>
+        <button class="add-task-btn" onclick="addTask('completed')">Add Task</button>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <footer>
+    <div class="copyright">
+      © 2025 AtharvaPatharkar. All rights reserved.
+    </div>
+    <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
