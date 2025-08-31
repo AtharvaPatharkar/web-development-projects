@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Progress Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Task Progress Tracker</h1>
+            <p>Track and manage your tasks with ease.</p>
+        </header>
+        <main>
+            <div class="task-form">
+                <input type="text" id="taskName" placeholder="Enter task name" />
+                <input type="date" id="taskDeadline" />
+                <input type="number" id="taskProgress" placeholder="Progress (%)" min="0" max="100" />
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+            <div class="task-list">
+                <h2>Your Tasks</h2>
+                <ul id="tasksContainer"></ul>
+            </div>
+        </main>
+    </div>
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
