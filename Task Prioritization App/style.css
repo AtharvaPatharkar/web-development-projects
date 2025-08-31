@@ -1,0 +1,84 @@
+/* CSS file */
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: rgb(255, 255, 255);
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#task-container, #priority-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #000;
+}
+
+.task {
+    background: rgb(255, 231, 10);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task:active {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.priority-zone {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed rgba(255, 255, 255, 0.7);
+    min-height: 200px;
+    text-align: center;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.priority-zone:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.github-link {
+    color: #ffa500;
+    text-decoration: none;
+    font-weight: bold;
+}
