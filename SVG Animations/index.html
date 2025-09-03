@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Animations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌟 SVG Animations Showcase 🌟</h1>
+        <p>Create and animate SVG graphics using CSS and JavaScript!</p>
+    </header>
+    <main>
+        <section class="svg-container">
+            <!-- Example SVG Animation -->
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="circle-animation">
+                <circle cx="100" cy="100" r="50" fill="#FF4B6E">
+                    <animate attributeName="r" from="50" to="70" dur="1s" repeatCount="indefinite" />
+                </circle>
+            </svg>
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="polygon-animation">
+                <polygon points="100,10 190,190 10,190" fill="#6A11CB">
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 100 100" to="360 100 100" dur="3s" repeatCount="indefinite" />
+                </polygon>
+            </svg>
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="path-animation">
+                <path d="M50 50 C70 30, 130 30, 150 50 S 130 150, 50 150 Z" fill="none" stroke="#2575FC" stroke-width="3">
+                    <animate attributeName="stroke-dasharray" from="0, 400" to="400, 0" dur="2s" repeatCount="indefinite" />
+                </path>
+            </svg>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

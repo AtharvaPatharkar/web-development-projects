@@ -1,0 +1,72 @@
+/* CSS file */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+}
+
+header {
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 20px;
+}
+
+.svg-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+svg {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+.circle-animation:hover {
+    filter: drop-shadow(0 0 10px #ff758c);
+}
+
+.polygon-animation:hover {
+    filter: drop-shadow(0 0 10px #6a11cb);
+}
+
+.path-animation:hover {
+    filter: drop-shadow(0 0 10px #2575fc);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+}
+
+footer {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.github-link {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+}
