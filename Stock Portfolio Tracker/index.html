@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📊 Stock Portfolio Tracker</h1>
+        <p>Track your stocks in real-time and monitor portfolio performance.</p>
+    </header>
+
+    <main>
+        <div class="tracker-container">
+            <div class="add-stock">
+                <input type="text" id="stockSymbol" placeholder="Enter Stock Symbol (e.g., AAPL)" />
+                <button id="addStockButton">Add Stock</button>
+            </div>
+
+            <div id="portfolio">
+                <h2>Your Portfolio</h2>
+                <ul id="stockList">
+                    <!-- Stocks will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <hr>
+    <footer>
+        <div class="copyright">
+            © 2025 AtharvaPatharkar. All rights reserved.
+        </div>
+        <a class="github-link" href="https://github.com/AtharvaPatharkar" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
