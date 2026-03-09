@@ -522,8 +522,8 @@ const projects = [
         description: "Create a blog platform with features to create, read, update, and delete posts."
     },
     { 
-        name: "Simple CMS (Content Management System)", 
-        path: "Simple CMS", 
+        name: "Simple Content Management System", 
+        path: "Simple Content Management System", 
         description: "Develop a basic CMS to manage website content easily."
     },
     { 
@@ -532,8 +532,8 @@ const projects = [
         description: "Keep track of stock and inventory with this lightweight system."
     },
     { 
-        name: "Social Media Feed (Mockup)", 
-        path: "Social Media Feed", 
+        name: "Social Media Feed Mockup", 
+        path: "Social Media Feed Mockup", 
         description: "Simulate a social media feed with posts and interactions."
     },
     { 
@@ -576,11 +576,11 @@ const projects = [
         path: "Text Analyzer", 
         description: "Analyze text for word count, readability, and more."
     },
-    { 
+   /* { 
         name: "Text to Speech", 
         path: "Text to Speech", 
         description: "Convert text into natural-sounding speech."
-    },
+    },*/
     { 
         name: "Tic Tac Toe Game", 
         path: "Tic Tac Toe Game", 
@@ -727,3 +727,4 @@ function searchProjects() {
     // Update the total project count for filtered results
     totalProjects.textContent = `Projects Found: ${filteredProjects.length}`;
 }
+
